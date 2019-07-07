@@ -15,3 +15,20 @@ The file just sources another file I maintain in a git repo...
 "" init.vim
 source ~/dotfiles/nvim/init.vim
 ```
+
+#### Sections
+[General](#general-settings)
+[Plugin Manager](#plugin-manager)
+
+
+#### General Settings ⚙️
+
+**Leader Key <,>**
+Easy enough leader key, I should try <space> 🤔 at some point...
+``` vim
+let mapleader = ","
+```
+
+
+
+
