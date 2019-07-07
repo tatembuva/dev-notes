@@ -37,10 +37,5 @@ set nocompatible
 
 ```
 
-``` vim
-set nocompatible
-
-```
-
 
 
