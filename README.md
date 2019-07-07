@@ -4,6 +4,6 @@ My personal developer journal/notebook...
 ---
 #### Table of Contents
 - **Cheat Sheets**
-  - [Markdown]('./notes/markdown.md')
+  - [Markdown](/notes/markdown.md)
 
 
