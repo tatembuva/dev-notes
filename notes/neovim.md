@@ -23,9 +23,8 @@ source ~/dotfiles/nvim/init.vim
 
 #### General Settings
 
-**Leader Key <,>**
 
-Easy enough leader key, I should try <space> 🤔 at some point...
+Set comma as the leader key.Easy enough leader key, I should try <space> 🤔 at some point...
 
 ``` vim
 let mapleader = ","
