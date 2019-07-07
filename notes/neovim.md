@@ -17,17 +17,24 @@ source ~/dotfiles/nvim/init.vim
 ```
 
 #### Sections
-[General](#general-settings)
-[Plugin Manager](#plugin-manager)
+- [General](#general-settings)
+- [Plugin Manager](#plugin-manager)
 
 
 #### General Settings
 
-
-Set comma as the leader key.Easy enough leader key, I should try <space> 🤔 at some point...
+Set comma as the leader key.Easy enough leader key, I should try `<space>` 🤔 at some point...
 
 ``` vim
 let mapleader = ","
+
+```
+
+Disable compatibility to old-time vi
+
+``` vim
+set nocompatible
+
 ```
 
 
