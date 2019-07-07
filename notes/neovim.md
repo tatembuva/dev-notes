@@ -21,7 +21,8 @@ source ~/dotfiles/nvim/init.vim
 [Plugin Manager](#plugin-manager)
 
 
-#### General Settings ⚙️
+#### General Settings
+###### ⚙️
 
 **Leader Key <,>**
 Easy enough leader key, I should try <space> 🤔 at some point...
