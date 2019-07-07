@@ -30,13 +30,17 @@ let mapleader = ","
 
 ```
 
-Disable compatibility to old-time vi
+Disable compatibility to old-time vi, should already be set in neovim but 🤷‍♂️ just in case...
 
 ``` vim
 set nocompatible
 
 ```
 
+``` vim
+set nocompatible
+
+```
 
 
 
