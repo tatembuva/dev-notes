@@ -17,11 +17,11 @@
 
 #### Random
 
-_File Format_, change the line ending of a file that was edited on a windows machine...Really annoying, I should just write a function that does this whenever a file is opened.
-q`` vim
+__File Format__, change the line ending of a file that was edited on a windows machine...Really annoying, I should just write a function that does this whenever a file is opened.
+``` vim
 :set ++ff=dos
 ```
-_Light/Dark_, change the background to light or dark, using the solarized color scheme and it just works, makes it easy to quickly switch the theme...
+__Light/Dark__, change the background to light or dark, using the solarized color scheme and it just works, makes it easy to quickly switch the theme...
 ``` vim
 :set background=light
 :set background=dark
