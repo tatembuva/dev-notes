@@ -12,5 +12,11 @@ My personal developer journal/notebook...
 - **Configs**
   - [NeoVim](/notes/neovim.md)
     - A break down of my neovim config
+- **Quantitaive Analysis**
+  - [enigma-catalyst](/notes/ec-setup.md)
+    - Initial setup and running guide for binance and catalyst
+- **DAPP Development**
+    - [Solidity](/notes/solidity.md)
+        - The solidity language, enviroment setup
 
 
