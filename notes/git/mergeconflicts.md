@@ -25,3 +25,9 @@ _This will need revision..._
 
   - Find all files that have merge conflicts in them...
     - `git diff --name-only --diff-filter=U`
+
+**Neovim + Fugitive**
+
+- Open neovim in project, open `:GStatus`
+- Files marked with `U` for "unresolved", cursor over them and use keybinding : `dv`
+  to display diff3 layout for diff
