@@ -20,5 +20,8 @@ _This will need revision..._
   ```
 
   - Or you can set it globally with the following command :
+
     - `git config --global merge.conflictstyle diff3`
 
+  - Find all files that have merge conflicts in them...
+    - `git diff --name-only --diff-filter=U`
