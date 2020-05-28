@@ -81,7 +81,6 @@
   - create a new dir & file from project root `app/settings.php` and insert the following :
 
     ```php
-
         <?php
 
         use \Psr\Container\ContainerInterface;
@@ -98,4 +97,44 @@
 
     ```
 
+  - Then in `bootstrap/index.php` add :
+
+    ```php
+        <?php
+
+        /*...*/
+        $container = new Container;
+
+        $settings = require __DIR__ . '/../app/settings.php';
+        $settings($container);
+
+        AppFactory.setContainer($container);
+        $app = AppFactory::create();
+
+        $middleware = require __DIR__ . '/../app/middleware.php';
+        $middleware($app);
+
+        /*...*/
+
+    ```
+
+  - create `app/middleware.php` and insert :
+
+    ```php
+      <?php
+
+      use Slim\App;
+
+      return function(App $app){
+          $settings = $app->getContainer()->get('settings');
+          $app->addErrorMiddleware(
+              $settings['displayErrorDetails'],
+              $settings['logErrorDetails'],
+              $settings['logErrors']
+          );
+      };
+    ```
+
   - To test, try accessing an endpoint that doesn't exist.
+
+- The initial setup is done now...
