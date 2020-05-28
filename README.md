@@ -26,3 +26,6 @@ My personal developer journal/notebook...
 - **Git + Neovim + Fugitive**
   - [Merge Conflicts](/notes/git/mergeconflicts.md)
     - ☠️
+- **PHP Slim**
+  - [Simple Auth Starter](/notes/slim4auth.md)
+    - A simple starter template for a Slim 4 Rest API, with authentication and route authorization
