@@ -26,6 +26,20 @@ My personal developer journal/notebook...
 - **Git + Neovim + Fugitive**
   - [Merge Conflicts](/notes/git/mergeconflicts.md)
     - ☠️
-- **PHP Slim**
-  - [Simple Auth Starter](/notes/slim4auth.md)
-    - A simple starter template for a Slim 4 Rest API, with authentication and route authorization
+- **Laravel**
+  - [Starter ECommerce Template](/notes/laravel/startertemplate.md)
+    - A simple starter template for a fully featured ecommerce website for Zimbabwean clients
+    - Laravel + Blade + Tailwindcss + Svelte + Paynow
+    - Static Pages
+      - Frontpage
+      - Contact page (will also be the about us page + google maps store location)
+      - Login & Register
+    - ?SSR Pages
+      - Shop
+        - can take a category add display category products
+        - product search and filter search
+      - Product detail page
+    - Svelte Pages
+      - Admin Dashboard
+      - User Dashboard
+      - Payment Wizard
