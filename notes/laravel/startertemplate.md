@@ -14,4 +14,9 @@ _Steps I took setting up laravel with tailwind,svelte and paynow..._
 
 #### Initial Setup
 
-Firstly...
+Firstly from a start, get the laravel installer with composer...
+
+```bash
+composer global require "laravel/installer=~1.1"
+
+```
