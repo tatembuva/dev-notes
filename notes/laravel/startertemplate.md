@@ -1,6 +1,6 @@
 ## ✏️
 
-### Laravel ECommerce Starter Teemplate
+### Laravel ECommerce Starter Template
 
 _Steps I took setting up laravel with tailwind,svelte and paynow..._
 
