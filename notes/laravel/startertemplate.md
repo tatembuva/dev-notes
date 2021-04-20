@@ -15,7 +15,7 @@ _Steps I took setting up laravel with tailwind,svelte and paynow..._
 - [SSR Pages](#ssr-pages)
 - [SPA Pages/components](#spa-pages/components)
 
-#### Initial Setup
+## Initial Setup
 
 Firstly from a start, get the laravel installer with composer...
 
@@ -95,7 +95,7 @@ Lastly...
 php artisan migrate
 ```
 
-#### Role Based Auth
+## Role Based Auth
 
 Using the laratrust package...
 
@@ -154,7 +154,7 @@ Then finally...
 php artisan db:seed
 ```
 
-#### Static Pages
+## Static Pages
 
 - [ ] Static Pages
   - [ ] Frontpage
@@ -163,7 +163,7 @@ php artisan db:seed
   - [ ] Contact page (will also be the about us page + google maps store location)
   - [ ] Login & Register
 
-#### SSR Pages
+## SSR Pages
 
 - [ ] ?SSR Pages
   - [ ] Shop
