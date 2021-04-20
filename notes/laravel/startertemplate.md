@@ -95,6 +95,57 @@ Lastly...
 php artisan migrate
 ```
 
+#### Role Based Auth
+
+Using the laratrust package...
+
+```bash
+composer require santigarcor/laratrust
+```
+
+Publish config file...
+
+```bash
+php artisan vendor:publish --tag="laratrust"
+```
+
+If the above 👆🏾command throws an error then try clear artisan config cache...
+
+```bash
+php artisan config:clear
+```
+
+This command will generate the migrations, create the Role and Permission models (if you are using the teams feature it will also create a Team model) and will add the trait to the configured user models.👇🏽
+_Before running this go to `config/laratrust.php` file and change defaults_
+
+```bash
+php artisan laratrust:setup && composer dump-autoload
+```
+
+Run a fresh migration...
+
+```bash
+php artisan migrate:fresh
+```
+
+Laratrust comes with a database seeder, this seeder helps you fill the permissions for each role depending on the module, and creates one user for each role.
+
+```bash
+php artisan laratrust:seeder
+```
+
+Then publish files to project...
+
+```bash
+php artisan vendor:publish --tag="laratrust-seeder" && composer dump-autoload
+```
+
+In the database/seeds/DatabaseSeeder.php file you have to add this to the run method...
+
+```php
+$this->call(LaratrustSeeder::class);
+```
+
 #### Static Pages
 
 - [ ] Static Pages
