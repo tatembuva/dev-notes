@@ -12,6 +12,8 @@ _Steps I took setting up laravel with tailwind,svelte and paynow..._
 
 - [Initial Setup](#initial-setup)
 - [Static Pages](#static-pages)
+- [SSR Pages](#ssr-pages)
+- [SPA Pages/components](#spa-pages/components)
 
 #### Initial Setup
 
@@ -95,24 +97,24 @@ php artisan migrate
 
 #### Static Pages
 
-- [o] Static Pages
-  - [o] Frontpage
-    - [] Navbar (guest, logged in, admin )
-    - [] Header/Hero Section
-  - [] Contact page (will also be the about us page + google maps store location)
-  - [] Login & Register
+- [ ] Static Pages
+  - [ ] Frontpage
+    - [ ] Navbar (guest, logged in, admin )
+    - [ ] Header/Hero Section
+  - [ ] Contact page (will also be the about us page + google maps store location)
+  - [ ] Login & Register
 
 #### SSR Pages
 
-- [] ?SSR Pages
-  - [] Shop
-  - [] can take a category add display category products
-  - [] product search and filter search
-  - [] Product detail page
+- [ ] ?SSR Pages
+  - [ ] Shop
+  - [ ] can take a category add display category products
+  - [ ] product search and filter search
+  - [ ] Product detail page
 
 #### SPA Pages/Components
 
-- [] SPA (Svelte) Pages
-  - [] Admin Dashboard
-  - [] User Dashboard
-  - [] Payment Wizard
+- [ ] SPA (Svelte) Pages
+  - [ ] Admin Dashboard
+  - [ ] User Dashboard
+  - [ ] Payment Wizard
