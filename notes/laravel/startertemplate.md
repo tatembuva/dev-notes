@@ -146,6 +146,14 @@ In the database/seeds/DatabaseSeeder.php file you have to add this to the run me
 $this->call(LaratrustSeeder::class);
 ```
 
+To setup the roles and permissions edit `config/laratrust_seeder.php` and run a migaration...
+
+Then finally...
+
+```bash
+php artisan db:seed
+```
+
 #### Static Pages
 
 - [ ] Static Pages
