@@ -154,6 +154,26 @@ Then finally...
 php artisan db:seed
 ```
 
+Now all the roles defined in `config/laratrust_seeder.php` are stored on the db,
+create a new controller for the 3 types of dashboards in this project...
+
+```bash
+php artisan make:controller DashboardController
+```
+
+Each type of dashboard `[customer|admin|superadmin]` will be its own svelte app,
+svelte will be attached to an element within the blade template, the navbar will remain a blade component...
+
+Put dashboard routes in a group, with auth middleware for all endpoints, roles are enforced at each endpoint...( nested route groups ? )
+
+In `routes/web.php` add :
+
+```php
+Route::group([], function() {
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+});
+```
+
 ## Static Pages
 
 - [ ] Static Pages
