@@ -11,9 +11,10 @@ _Steps I took setting up laravel with tailwind,svelte and paynow..._
 #### Sections
 
 - [Initial Setup](#initial-setup)
+- [Models](#models)
 - [Static Pages](#static-pages)
 - [SSR Pages](#ssr-pages)
-- [SPA Pages/components](#spa-pages/components)
+- [SPA Pages](#spa-pages)
 
 ## Initial Setup
 
@@ -169,10 +170,38 @@ Put dashboard routes in a group, with auth middleware for all endpoints, roles a
 In `routes/web.php` add :
 
 ```php
-Route::group([], function() {
+Route::group(['middleware' => ['auth']], function() {
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
 });
 ```
+
+The DashboardController will switch between user_roles and render the apropriate view, and each view is its own independant svelte app, modular : later mobile clients can be added with little friction...
+
+---
+
+For api auth, the laravel Sanctum package...
+
+```bash
+composer require laravel/sanctum
+```
+
+Publish the sanctum service provider and migrate...
+
+```bash
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+&& php artisan migrate
+```
+
+---
+
+## Models/Database Schema
+
+- Product
+  - name
+  - slug
+  - description
+  - price
+  - timestamps\*
 
 ## Static Pages
 
@@ -195,5 +224,8 @@ Route::group([], function() {
 
 - [ ] SPA (Svelte) Pages
   - [ ] Admin Dashboard
+    - [x] creating independent svelte app and routing to it based on user-role
   - [ ] User Dashboard
+    - [x] creating independent svelte app and routing to it based on user-role
   - [ ] Payment Wizard
+    - [x] creating independent svelte app and routing to it based on user-role
