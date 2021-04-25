@@ -192,6 +192,37 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 && php artisan migrate
 ```
 
+_Product model and controller..._
+Create product model...
+
+```bash
+php artisan make:model Product --migration
+```
+
+Edit the product table migration file in `database/migrations`...
+
+```php
+    public function up()
+  {
+  Schema::create('products', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->string('slug');
+        $table->text('description')->nullable();
+        $table->decimal('price', 5, 2);
+        $table->timestamps();
+     });
+ }
+```
+
+Add fields to `$fillable ` array in the product model otherwise you can not create new records...
+
+Create a contoller fro products with basic crud functionality...
+
+```bash
+php artisan make:controller ProductController --api
+```
+
 ---
 
 ## Models
