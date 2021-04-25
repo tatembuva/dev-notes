@@ -194,7 +194,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
 ---
 
-## Models/Database Schema
+## Models
 
 - Product
   - name
@@ -220,7 +220,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
   - [ ] product search and filter search
   - [ ] Product detail page
 
-#### SPA Pages/Components
+## SPA Pages
 
 - [ ] SPA (Svelte) Pages
   - [ ] Admin Dashboard
